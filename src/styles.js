@@ -20,8 +20,13 @@ export const Main = styled.div`
 export const ContainerForm = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 20px
+  gap: 20px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
+
 
 export const FormLabel = styled.label`
   font-size: 25px;
